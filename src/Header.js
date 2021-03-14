@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./robinhood.svg";
-import './Header.css'
+import "./Header.css";
 
 function Header() {
   return (
@@ -17,11 +17,11 @@ function Header() {
       </div>
       {/* menu items */}
       <div className="header__menuItems">
-          <a href = "#">Free Stocks</a>
-          <a href = "#">Portfolio</a>
-          <a href = "#">Cash</a>
-          <a href = "#">Messages</a>
-          <a href = "#">Account</a>
+        <a href="#">Free Stocks</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Cash</a>
+        <a href="#">Messages</a>
+        <a href="#">Account</a>
       </div>
     </div>
   );
