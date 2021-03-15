@@ -57,7 +57,7 @@ function Stats() {
         </div>
         <div className="stats__content">
           <div className="stats__rows">
-              {stockData.map((stock)=>(<StatsRow/>))}
+             
             
              {/* key={stock.data.ticker}
                 name={stock.data.ticker}
@@ -71,7 +71,9 @@ function Stats() {
           <p>Lists</p>
         </div>
         <div className="stats__content">
-          <div className="stats__rows">{/* Stocks we can buy */}</div>
+          <div className="stats__rows">{/* Stocks we can buy */}
+          {stockData.map((stock)=>(<StatsRow/>))}
+          </div>
         </div>
       </div>
     </div>
