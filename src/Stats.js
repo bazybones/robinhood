@@ -8,6 +8,7 @@ const BASE_URL = "https://finnhub.io/api/v1/quote";
 
 function Stats() {
   const [stockData, setstockData] = useState([]);
+  const [myStocks, setmyStocks] = useState([]);
 
   const getStocksData = (stock) => {
     return axios
@@ -59,11 +60,7 @@ function Stats() {
           <div className="stats__rows">
              
             
-             {/* key={stock.data.ticker}
-                name={stock.data.ticker}
-                openPrice={stock.info.o}
-                volume={stock.data.shares}
-                price={stock.info.c}  */}
+             
             
           </div>
         </div>
@@ -72,7 +69,13 @@ function Stats() {
         </div>
         <div className="stats__content">
           <div className="stats__rows">{/* Stocks we can buy */}
-          {stockData.map((stock)=>(<StatsRow/>))}
+          {stockData.map((stock)=>(<StatsRow
+                key={stock.name}
+                name={stock.name}
+                openPrice={stock.o}
+                volume={stock.shares}
+                price={stock.c}  
+          />))}
           </div>
         </div>
       </div>
