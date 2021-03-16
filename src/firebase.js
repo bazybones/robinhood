@@ -1,3 +1,5 @@
+import firebase from 'firebase'
+
 const firebaseConfig = {
     apiKey: "AIzaSyBiEu5aEJ_qHnDroVzxf3t2x-D95NppYNQ",
     authDomain: "robinhood-21b22.firebaseapp.com",
@@ -8,3 +10,8 @@ const firebaseConfig = {
   };
 
   
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const db = firebaseApp.firestore();
+
+export { db };
