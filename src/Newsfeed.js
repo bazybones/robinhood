@@ -34,7 +34,7 @@ function Newsfeed() {
       <div className="newsfeed__container">
         <div className="newsfeed__chart__section">
           <div className="newsfeed_price_asset">
-            <h1> $114,656,84</h1>
+            <h1> $114,656.84</h1>
             <p> $142.90 (-0,12) Today </p>
           </div>
           <div className="newsfeed__chart">
