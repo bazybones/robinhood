@@ -1,54 +1,68 @@
-.header__wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-    color: white;
+.header__wrapper {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
 }
 
-.header__logo{
-    margin-left: 48px;
-    
-}
-.header__search{
-    display: flex;
-    height: 40px;
-    padding: 10px;
-    align-items: center;
+.header__logo {
+  margin-left: 48px;
 }
 
-.header__searchContainer{
-    height: 20px;
-    border: 1px solid #31363A;
-    border-radius: 4px;
-    width: 375px;
+.header__search {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 39px;
+  padding: 10px;
 }
 
-.header__searchContainer > input{
-    background-color: transparent;
-    border: none;
-    width: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: white;
+.header__searchContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  border: 1px solid #31363A;
+  padding: 5px;
+  border-radius: 4px;
 }
 
-.header__searchContainer > input:focus{
-    outline: none;
+.header__searchContainer > .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
 }
 
-.header__menuItems{
-    margin-left: 48px;
+.header__searchContainer > input {
+  border: none;
+  width: 375px;
+  margin-left: 5px;
+  margin-right: 10px;
+  background-color: black;
+  color: white;
+}
+
+.header__searchContainer > input:focus {
+  outline: none;
+}
+
+.header__menuItems {
+  margin-right: 48px;
 }
 
 .header__menuItems a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0 10px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
 }
 
-.header__menuItems a:hover{
-    color: #5AC53B;
+.header__menuItems a:hover,
+.header__menuItems a:active {
+  color: #5AC53B;
 }
 
+a:first-of-type {
+  color: #5AC53B;
+}
